@@ -3,7 +3,7 @@
 
 the idea is simple: type a site, get a verdict, see which countries show blocking signal, page through the full picture if you want it.
 
- > [!NOTE]
+ > [!WARNING]
  > laws on checking or discussing censorship vary by country. **veil** only
  > reads public OONI data. it doesn't access, proxy, or bypass anything.
 
@@ -18,7 +18,7 @@ it does this by reading public measurement data from [OONI](https://ooni.org), a
 
 alongside the OONI verdict, veil also gathers basic details about the site itself: its resolved IP, hosting organization and ASN, a quick HTTP check, and the page title. this part reflects your own machine's vantage point, not the target country, and is shown as separate context.
 
- > [!IMPORTANT]
+ > [!NOTE]
  > results come from OONI's crowdsourced data, not a live test. sparse
  > coverage can show `NO DATA` even where access is actually blocked.
 
