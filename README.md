@@ -27,19 +27,6 @@ alongside the OONI verdict, veil also gathers basic details about the site itsel
  > complete or fully valid info. double-check whether the information
  > is valid.
 
-## install
-download [Python](https://python.org/downloads) for your os and run this command on your terminal:
-
-```bash
-pip install veil-cli
-```
-
-on systems that block plain `pip install` outside a virtual environment (arch and others enforcing PEP 668), use `pipx` instead:
-
-```bash
-pipx install veil-cli
-```
-
 ## features
 - **country check**: give it a site and a country, get back a clear verdict: blocked, likely blocked, reachable, or no data
 - **list all countries**: leave the country blank to see every country with any OONI data for that site, sorted worst first
@@ -50,8 +37,30 @@ pipx install veil-cli
 - **one shot mode**: run it as a single command for scripting or quick checks
 - **honest about gaps**: countries with too little OONI coverage are shown as no data, never folded into a reassuring summary
 
-## star history
+## install
+download [Python](https://python.org/downloads) for your os and run this command on your terminal:
 
+```bash
+pip install veil-cli
+```
+
+or use `pipx` if your system enforces PEP 668
+
+## build from source
+
+clone the repo and install it in editable mode:
+
+```bash
+git clone https://github.com/neroki194/veil-cli.git
+cd veil-cli
+pip install -r requirements.txt
+pip install -e .
+```
+or use `pipx` if your system enforces PEP 668
+
+then run `veil` as usual.
+
+## star history
 <a href="https://www.star-history.com/?repos=neroki194%2Fveil-cli&type=date&legend=top-left">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=neroki194/veil-cli&type=date&theme=dark&legend=top-left" />
